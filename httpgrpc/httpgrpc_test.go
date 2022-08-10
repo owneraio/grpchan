@@ -9,9 +9,9 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/fullstorydev/grpchan"
-	"github.com/fullstorydev/grpchan/grpchantesting"
-	"github.com/fullstorydev/grpchan/httpgrpc"
+	"github.com/owneraio/grpchan"
+	"github.com/owneraio/grpchan/grpchantesting"
+	"github.com/owneraio/grpchan/httpgrpc"
 	"google.golang.org/grpc/status"
 )
 

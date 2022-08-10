@@ -8,7 +8,7 @@ import (
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/fullstorydev/grpchan/httpgrpc"
+	"github.com/owneraio/grpchan/httpgrpc"
 )
 
 var (

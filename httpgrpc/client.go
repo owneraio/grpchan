@@ -30,7 +30,7 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	"github.com/fullstorydev/grpchan/internal"
+	"github.com/owneraio/grpchan/internal"
 )
 
 // Channel is used as a connection for GRPC requests issued over HTTP 1.1. The

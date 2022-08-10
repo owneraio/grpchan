@@ -29,6 +29,8 @@ type CallOptions struct {
 	// MaxSend is the maximum number of bytes to send for a single message in
 	// a call.
 	MaxSend int
+
+	ServicePrefix string
 }
 
 // SetHeaders sets all accumulated header addresses to the given metadata. This
@@ -73,6 +75,8 @@ func GetCallOptions(opts []grpc.CallOption) *CallOptions {
 			copts.MaxRecv = o.MaxRecvMsgSize
 		case grpc.MaxSendMsgSizeCallOption:
 			copts.MaxSend = o.MaxSendMsgSize
+		case grpc.ContentSubtypeCallOption:
+			copts.ServicePrefix = o.ContentSubtype
 		}
 	}
 	return &copts

@@ -15,9 +15,9 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/emptypb"
 
-	"github.com/fullstorydev/grpchan"
-	"github.com/fullstorydev/grpchan/grpchantesting"
-	"github.com/fullstorydev/grpchan/internal"
+	"github.com/owneraio/grpchan"
+	"github.com/owneraio/grpchan/grpchantesting"
+	"github.com/owneraio/grpchan/internal"
 )
 
 func TestInterceptServerUnary(t *testing.T) {

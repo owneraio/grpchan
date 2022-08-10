@@ -13,9 +13,9 @@ import (
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/fullstorydev/grpchan"
-	"github.com/fullstorydev/grpchan/grpchantesting"
-	"github.com/fullstorydev/grpchan/internal"
+	"github.com/owneraio/grpchan"
+	"github.com/owneraio/grpchan/grpchantesting"
+	"github.com/owneraio/grpchan/internal"
 )
 
 func TestInterceptClientConnUnary(t *testing.T) {

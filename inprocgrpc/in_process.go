@@ -22,8 +22,8 @@ import (
 	"google.golang.org/grpc/peer"
 	"google.golang.org/grpc/status"
 
-	"github.com/fullstorydev/grpchan"
-	"github.com/fullstorydev/grpchan/internal"
+	"github.com/owneraio/grpchan"
+	"github.com/owneraio/grpchan/internal"
 )
 
 // frame is the unit of communication with gRPC streams. Frames are used to send
@@ -216,7 +216,10 @@ func (c *Channel) Invoke(ctx context.Context, method string, req, resp interface
 	}
 
 	strs := strings.SplitN(method[1:], "/", 2)
-	serviceName := strs[0]
+	serviceName := strs[0] // todo: take "service" from call options and add a prefix to a service name
+	if len(copts.ServicePrefix) > 0 {
+		serviceName = fmt.Sprintf("%s:%s", copts.ServicePrefix, serviceName)
+	}
 	methodName := strs[1]
 	sd, handler := c.handlers.QueryService(serviceName)
 	if sd == nil {

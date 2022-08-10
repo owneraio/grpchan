@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fullstorydev/grpchan/grpchantesting"
-	"github.com/fullstorydev/grpchan/inprocgrpc"
 	"github.com/jhump/protoreflect/desc"
 	"github.com/jhump/protoreflect/dynamic"
 	"github.com/jhump/protoreflect/dynamic/grpcdynamic"
+	"github.com/owneraio/grpchan/grpchantesting"
+	"github.com/owneraio/grpchan/inprocgrpc"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )

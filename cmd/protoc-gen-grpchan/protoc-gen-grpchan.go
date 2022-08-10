@@ -59,7 +59,7 @@ func doCodeGen(req *plugins.CodeGenRequest, resp *plugins.CodeGenResponse) error
 	return nil
 }
 
-var typeOfRegistry = gopoet.NamedType(gopoet.NewSymbol("github.com/fullstorydev/grpchan", "ServiceRegistry"))
+var typeOfRegistry = gopoet.NamedType(gopoet.NewSymbol("github.com/owneraio/grpchan", "ServiceRegistry"))
 var typeOfClientConn = gopoet.NamedType(gopoet.NewSymbol("google.golang.org/grpc", "ClientConnInterface"))
 var typeOfContext = gopoet.NamedType(gopoet.NewSymbol("context", "Context"))
 var typeOfCallOptions = gopoet.SliceType(gopoet.NamedType(gopoet.NewSymbol("google.golang.org/grpc", "CallOption")))

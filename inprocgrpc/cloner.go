@@ -10,7 +10,7 @@ import (
 	"google.golang.org/grpc/encoding"
 	grpcproto "google.golang.org/grpc/encoding/proto"
 
-	"github.com/fullstorydev/grpchan/internal"
+	"github.com/owneraio/grpchan/internal"
 )
 
 // Cloner knows how to make copies of messages. It can be asked to copy one

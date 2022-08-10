@@ -21,8 +21,8 @@ import (
 	"google.golang.org/grpc/peer"
 	"google.golang.org/grpc/status"
 
-	"github.com/fullstorydev/grpchan"
-	"github.com/fullstorydev/grpchan/internal"
+	"github.com/owneraio/grpchan"
+	"github.com/owneraio/grpchan/internal"
 )
 
 // Server is a gRPC-over-HTTP server. It acts as a grpc.ServiceRegistrar,

@@ -4,7 +4,7 @@
 package grpchantesting
 
 import "context"
-import "github.com/fullstorydev/grpchan"
+import "github.com/owneraio/grpchan"
 import "google.golang.org/grpc"
 import "google.golang.org/protobuf/types/known/emptypb"
 

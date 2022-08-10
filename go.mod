@@ -1,4 +1,4 @@
-module github.com/fullstorydev/grpchan
+module github.com/owneraio/grpchan
 
 go 1.13
 
